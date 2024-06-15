@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+    z-index: 10;
+    
+}
+
+
+:root{
+    --text-color: #FFF;
+    --search-bar: #F2F2F2;
+}
+.teksti{
+    color:white;
+}
+.divback{
+  padding-top: 70px;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+}
+.pay{
+  border:1px solid black ;
+  width: 100%;
+}
+
+.containerr {
+  position: fixed;
+  width: 100%;
+  background-image: url("fotot/lotus.jpg"); 
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.containerr:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #3e038b 0%, #0a394f 100%);
+  filter: blur(200px);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+}
+@media (max-width: 570px) {
+ 
+  .containerr {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .containerr:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+}
+
+
+
+#divK{
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   margin: auto;
+  
+   
+}
+#div2{
+    
+    z-index: 2;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    width: 25%;   
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+
+  
+  .card_box1 span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box1 span::before {
+    content: 'Budget';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #111c78 0%, #2c3534  51%, #111c78  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .card_box1 span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    transform: rotate(-45deg) translateY(-20px);
+   background-color: #111c78;
+   
+  } 
+
+
+
+
+
+
+  .container2 {
+    display: flex;
+    justify-content: center;
+    width: 25%;   
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  
+  .card_box2 span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box2 span::before {
+    content: 'Standard';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #1f95a4 0%, #14a037  51%, #1f95a4 100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .card_box2 span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+   background-color:#12f09b ;
+    transform: rotate(-45deg) translateY(-20px);
+  } 
+
+
+
+
+
+
+  .container3 {
+    display: flex;
+    justify-content: center;
+    width: 25%;   
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+    transition: all .3s;
+  }
+  
+  .card_box3 span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box3 span::before {
+    content: 'Delux';
+    position: absolute; 
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .card_box3 span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+
+  .divC{
+    width: 90%;
+    height: 150px;
+  }
+
+  .divC2{
+    height: 150px;
+    overflow: auto;
+  }
+  
+  
+  .txt1{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .txt2{
+    font-size: 0.5em;
+    color: #9e9b9b;
+    text-decoration: line-through;
+  }
+  .txt3{
+    font-size: 0.8em;
+    color: #d7c6c6;
+  }
+
+  .button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #111213;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(6, 6, 6, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   }
+   
+   .button1:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+   }
+   .button1:active {
+    box-shadow: none;
+   }
+
+   .button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #111213;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(6, 6, 6, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #068a5e, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   }
+
+   .button2:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #7bcc45, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+   }
+   .button2:active {
+    box-shadow: none;
+   }
+
+   .button3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #111213;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(6, 6, 6, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #f0c505, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   }
+
+   .button3:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #dae910, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+   }
+   .button3:active {
+    box-shadow: none;
+   }
+   
+   .title1{
+    color: #d7c6c6;
+    font-size: 2.5em;
+   }
+
+
+
+   .moreinfo{
+     border-radius:10px ;
+    width: 90%;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%); 
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+   .divat{
+      width:31% ;
+      color: #d7c6c6; 
+      background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%); 
+      border-radius: 10px;
+     margin: 10px;
+     margin-top: 10px;
+        overflow: auto;
+   }
+   .divat2{
+    width:90% ;
+    margin: auto;
+ }
+
+ .divKerri{
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);  
+  display: flex;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  flex-wrap: wrap;
+ }
+ 
+ .kerridiv{
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+ }
+ .kerri{
+  width: 80%;
+  border-radius: 15px;
+ }
+
+
+ .txtKerri{
+  width: 100%;
+  margin-left: 10px;
+  text-align: center;
+ }
+ li , p, h2{
+  color: white;
+ }
+
+   @media screen and (max-width: 768px)  {
+
+    .container1 {
+      width: 90%; 
+      margin-top: 15px; 
+    }
+    .container2 {
+      width: 90%;  
+      margin-top: 15px; 
+    }
+    .container3 {
+      width: 90%;
+      margin-top: 15px;   
+    }
+
+    .txt1{
+      margin-left: 60px;
+    }
+
+    button{
+      margin-bottom: 20px;
+    }
+    .divat{
+      width:90% ;
+   }
+    .divat2{
+      width:85% ;
+   }
+
+   .divKerri{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+   } 
+   .kerridiv{
+    justify-content: center;
+   }
+
+   .txtKerri{
+  text-align: center;
+   }
+   }

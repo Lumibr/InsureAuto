@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+.logotxt{
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+  
+.button1 {
+  --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+  --accent: fuchsia;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  padding: 1em 2em;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+  border: 1px solid white;
+}
+
+.button1:hover {
+  box-shadow: var(--hover-shadows);
+}
+
+.button1:active {
+  box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+}
+
+
+.containerr {
+  position: fixed;
+  width: 100%;
+  background-image: url("fotot/bacCar.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.containerr:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #23034de7 0%, #0a394f 100%);
+  filter: blur(200px);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+}
+@media (max-width: 570px) {
+ 
+  .containerr {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .containerr:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+}
+
+.divK{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff22;
+  flex-wrap: wrap;
+}
+
+.teksti{
+  width: 50%;
+  text-align: center;
+}
+.txt1{
+  color: aliceblue;
+}
+.txt11{
+  color: aliceblue;
+  font-size: 2rem;
+}
+.pulla{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+
+
+@media (max-width: 870px) {
+  .teksti{
+    width: 100%;
+    text-align: center;
+  }
+  .pulla{
+    width: 100%;
+   margin-bottom: 15px;
+   font-size: 0.8em;
+  }
+  .containerr {
+    position: fixed;
+    width: 100%;
+    background-image: url("fotot/bacCar.jpg"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: -10;
+    background-color: #010003;
+  }
+
+}

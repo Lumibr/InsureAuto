@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&display=swap");
+*{
+    
+}
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: "Poppins", serif;
+  background: #eeaeca;
+  background-image: url("fotot/lotus.jpg"); 
+  background-size: cover;
+}
+.kalendari{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+}
+.minitxt{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.minitxt1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h1 {
+  font-weight: 800;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  margin: 0.25rem;
+  flex-flow: column;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 0.2s;
+}
+.yes:hover {
+    transform: scale(1.1);
+}
+.yes:active {
+    transform: scale(0.99);
+}
+ul li time {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+ul .today {
+  background: #ffffff70;
+}
+ul .today time {
+  font-weight: 800;
+}
+.tejdukshem{
+    opacity: 0.3;
+}
+.container{
+    width: 30% ;
+    margin-bottom: 40px;
+}
+.container form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        padding: 10px;
+        border-radius: 10px;
+  }
+  
+  .container label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+  }
+  
+  .container  label input {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .container label input:checked + span {
+    background-color: #414181;
+    color: white;
+  }
+  
+  .container label input:checked + span:before {
+    box-shadow: inset 0 0 0 0.4375em #00005c;
+  }
+  
+  .container label span {
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+    color: #414181;
+    font-size: 2.0rem;
+  }
+  
+  .container label span:hover {
+    background-color: #d6d6e5;
+  }
+  
+  .container label span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #00005c;
+  }
+  
+  
+  @keyframes stretch-animate {
+    0% {
+      transform: scale(1, 1);
+    }
+  
+    28% {
+      transform: scale(1.15, 0.85);
+    }
+  
+    50% {
+      transform: scale(0.9, 1.1);
+    }
+  
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  .socials {
+    position: fixed;
+    display: block;
+    left: 20px;
+    bottom: 20px;
+  }
+  
+  .socials > a {
+    display: block;
+    width: 30px;
+    opacity: .2;
+    transform: scale(var(--scale, 0.8));
+    transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+  }
+  
+  .socials > a:hover {
+    --scale: 1;
+  }
+
+  .submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 30%;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #eff0f1;
+    background-color: #1d6cb2;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(6, 6, 6, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    margin: auto;
+   }
+
+   .submitBtn:active {
+    transform: scale(0.99);
+   }
+
+   
+
+  @media (max-width: 570px) {
+    ul li {
+        display: flex;
+        width: 10rem;
+        height: 10rem;
+        margin: 0.25rem;
+        flex-flow: column;
+        border-radius: 0.2rem;
+        padding: 1rem;
+        font-weight: 300;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .form {
+        
+        --width: 250px;
+        --height: 240px;
+        
+        
+        
+      }
+  }

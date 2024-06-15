@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+   
+
+    
+}
+
+
+:root{
+    --text-color: #FFF;
+    --search-bar: #F2F2F2;
+}
+.teksti{
+    color:white;
+}
+
+#divK{
+  
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   
+}
+#div2{
+    
+    z-index: 2;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#nav{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    display: block;
+}
+.containerr {
+  position: fixed;
+  width: 100%;
+  background-image: url("fotot/road.jpg"); 
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.containerr:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #c055ce 0%, #0a394f 100%);
+  filter: blur(100px);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+}
+@media (max-width: 570px) {
+ 
+  .containerr {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .containerr:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+}
+
+.card1 {
+    float: right;
+    width: 30%;
+    height: 100px;
+    background: rgb(17, 4, 134);
+    border: 1px solid rgb(204, 143, 245) ;
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 5px 10px 50px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    color: white;
+    display: flex;
+    justify-content: center;
+   text-align: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right,   rgb(15, 9, 49), rgb(36, 59, 85));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .card2 {
+    float: right;
+    width: 100%;
+    height: 350px;
+    background: rgb(17, 4, 134);
+    border: 1px solid rgb(204, 143, 245) ; 
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 5px 10px 50px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    color: white;
+    display: flex;
+    justify-content: center;
+   text-align: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to left,   rgb(15, 9, 49), rgb(36, 59, 85));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .txtget{
+    font-size: 1.5em;
+  }
+  .txt15{
+    font-size: 2.4em;
+  }
+
+  .txt1{
+    font-size: 1.4em;
+  }
+
+  #divCar{
+    width: 50%;
+  
+}
+
+  #car {
+    width: 90%; 
+    transition:  2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+       
+        opacity: 0;
+    }
+    100% {
+        
+        opacity: 1;
+    }
+}
+
+
+#car {
+    animation: fadeIn 2s ease-in-out forwards; 
+}
+
+#divCard{
+    width: 100%;
+    height: 300px;
+    display: flex;
+   margin: auto;
+}
+.divCard2{
+  width: 20%;
+ display: flex;
+ margin: auto;
+}
+
+.cards{
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+.exp {
+  width: 80%;
+  font-family: inherit;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+  color: white;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.exp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.exp:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.exp span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+.exp svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.exp .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+.exp:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.exp:hover svg {
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+  @media screen and (max-width: 768px){
+    #div2{
+        display: flex;
+        align-items: center;
+    }
+    #divCar{
+        margin: auto;
+        width: 80%;
+      
+    }
+    #divCard{
+        display: flex;
+        align-items: center;
+        width: 100%;
+       
+    }
+    .card{
+        width: 90%;
+        display: flex;
+        margin: auto;
+    } 
+    .card1 {
+      width: 45%;
+      height: 150px;
+    }
+    .card2 {
+      width: 100%;
+      height: 250px;
+    }
+   
+    .divCard2 {
+      width: 45%;
+      height: 200px;
+    }
+
+    
+  .txt1{
+    font-size: 0.8em;
+  }
+
+  .exp span {
+    font-size: 0.8em;
+  }
+
+
+
+
+  }
+  
+  
+
+
+
